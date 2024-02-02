@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Determine the Score
-    1) X /10 * N
+    Problem: Lucky Seven
+    1) Print the 6th index of the given string
  */
 
 public class Main {
@@ -11,9 +11,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
-        int t = in.nextInt();
-        for (int tt = 0; tt < t; tt++) pw.println((in.nextInt() / 10) * in.nextInt());
-
+        String s = in.next();
+        pw.println(s.charAt(6));
         pw.close();
     }
 

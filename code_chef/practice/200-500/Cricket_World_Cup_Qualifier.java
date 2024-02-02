@@ -2,18 +2,17 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Determine the Score
-    1) X /10 * N
+    Problem: Cricket World Cup Qualifier
+    1) Check if the input is greater or equal to 12
+    2) Print Yes if so else No
  */
 
 public class Main {
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
-        int t = in.nextInt();
-        for (int tt = 0; tt < t; tt++) pw.println((in.nextInt() / 10) * in.nextInt());
-
+        int x = in.nextInt();
+        pw.println(x >= 12 ? "Yes" : "No");
         pw.close();
     }
 

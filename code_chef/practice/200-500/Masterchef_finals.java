@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Determine the Score
-    1) X /10 * N
+    Problem: Master chef finals
+    1) If input is within 10 then YES otherwise NO
  */
 
 public class Main {
@@ -12,8 +12,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
-        for (int tt = 0; tt < t; tt++) pw.println((in.nextInt() / 10) * in.nextInt());
-
+        for (int tt = 0; tt < t; tt++) pw.println(in.nextInt() <= 10 ? "YES" : "NO");
         pw.close();
     }
 

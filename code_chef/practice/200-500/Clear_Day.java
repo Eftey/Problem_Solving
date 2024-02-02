@@ -2,8 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Determine the Score
-    1) X /10 * N
+    Problem: Clear Day
+    1) Rainy + Cloudy = Unclear days
+    2) Week = 7 - unclear days = Clear days
  */
 
 public class Main {
@@ -11,9 +12,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
-        int t = in.nextInt();
-        for (int tt = 0; tt < t; tt++) pw.println((in.nextInt() / 10) * in.nextInt());
-
+        pw.println(7 - (in.nextInt() + in.nextInt()));
         pw.close();
     }
 

@@ -1,6 +1,3 @@
-import java.io.*;
-import java.util.*;
-
 /*
     Problem: Longest Common Prefix
     1) Since common then we can sort it to bring out in the same order
@@ -11,18 +8,9 @@ import java.util.*;
     6) Return the new String
  */
 
-public class Main {
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        PrintWriter pw = new PrintWriter(System.out);
-        String[] x = {"flower","flow","flight"};
-        pw.println(longestCommonPrefix(x));
-        pw.close();
-    }
-
-
-    public static String longestCommonPrefix(String[] x) {
+class Solution {
+    public String longestCommonPrefix(String[] x) {
         StringBuilder s = new StringBuilder();
         Arrays.sort(x);
         int min = Math.min(x[0].length(), x[x.length - 1].length());
@@ -31,10 +19,5 @@ public class Main {
                 s.append(x[0].charAt(i));
             } else return s.toString();
         return s.toString();
-    }
-
-
-    static void debug(Object... obj) {
-        System.err.println(Arrays.deepToString(obj));
     }
 }

@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Puzzle Hunt
-    1) If he has people from 6 to 8 then yes else no
+    Problem: IPL Ticket Rush
+    1) If all students meets the demand then 0 else remaining
 
  */
 
@@ -12,8 +12,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
-        int x = in.nextInt();
-        pw.println(x <= 8 && x >= 6 ? "Yes" : "No");
+        int t = in.nextInt();
+        for (int tt = 0; tt < t; tt++) {
+            int x = in.nextInt(), y = in.nextInt();
+            pw.println(x <= y ? 0 : x - y);
+        }
 
         pw.close();
     }

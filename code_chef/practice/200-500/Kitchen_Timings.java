@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Puzzle Hunt
-    1) If he has people from 6 to 8 then yes else no
+    Problem: Kitchen Timings
+    1) Total - Have = remaining
 
  */
 
@@ -12,8 +12,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
-        int x = in.nextInt();
-        pw.println(x <= 8 && x >= 6 ? "Yes" : "No");
+        int t = in.nextInt();
+        for (int tt = 0; tt < t; tt++) {
+            pw.println(Math.abs(in.nextInt() - in.nextInt()));
+        }
 
         pw.close();
     }

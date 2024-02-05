@@ -3,9 +3,8 @@ import java.util.*;
 
 
 /*
-    Problem: Chef and Donation
-    1) Chef - his wife = Charity
-    2) But to avoid being negative we have to use Absolute around it
+    Problem: Tom and Jerry Chase
+    1) If Tom has greater speed only then he could catch Jerry
  */
 
 public class Main {
@@ -15,7 +14,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            pw.println(Math.abs(in.nextInt() - in.nextInt()));
+            pw.println(in.nextInt() > in.nextInt() ? "YES" : "NO");
         }
         pw.close();
     }

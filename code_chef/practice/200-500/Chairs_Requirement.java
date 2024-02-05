@@ -3,9 +3,9 @@ import java.util.*;
 
 
 /*
-    Problem: Chef and Donation
-    1) Chef - his wife = Charity
-    2) But to avoid being negative we have to use Absolute around it
+    Problem: Chairs Requirement
+    1) If the chair are greater or equal than the student then no need to buy
+    2) Else he has to buy Total student - current chair count
  */
 
 public class Main {
@@ -15,7 +15,8 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            pw.println(Math.abs(in.nextInt() - in.nextInt()));
+            int x = in.nextInt(), y = in.nextInt();
+            pw.println(x <= y ? 0 : x - y);
         }
         pw.close();
     }

@@ -1,19 +1,21 @@
 import java.io.*;
 import java.util.*;
 
+/*
+    Problem: 2000
+    1) Total money = 2000 * number of that notes
+    2) Then to pay with only 500 we can divide to get the amount
+ */
+
 public class Main {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter pw = new PrintWriter(System.out);
-
-        int t = in.nextInt();
-        for (int tt = 0; tt < t; tt++) {
-
-        }
-
+        pw.println((in.nextInt() * 2000) / 500);
         pw.close();
     }
+
     static void debug(Object... obj) {
         System.err.println(Arrays.deepToString(obj));
     }

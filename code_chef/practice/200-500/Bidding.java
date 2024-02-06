@@ -3,18 +3,21 @@ import java.util.*;
 
 
 /*
-    Problem: Chess Time
-    1) Hrs * 60 = Minutes / 20 = Number of chess game he can play
+    Problem: Bidding
+    1) Whoever has the biggest wins
  */
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            pw.println((in.nextInt() * 60) / 20);
+            int y = in.nextInt(), x = in.nextInt(), z = in.nextInt();
+            if (x > y && x > z) pw.println("Bob");
+            else if (y > x && y > z) pw.println("Alice");
+            else pw.println("Charlie");
         }
         pw.close();
     }

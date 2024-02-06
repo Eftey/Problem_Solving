@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 
 /*
-    Problem: A Wrong Subtraction
+    Problem: Remove Duplicates from Sorted Array
     1) There are two methods
     2) One is using the set which automatically removes all the duplicates
     3) Two removing the duplicates by finding the max of the current value

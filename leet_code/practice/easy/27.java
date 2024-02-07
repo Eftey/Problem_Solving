@@ -3,8 +3,9 @@ import java.util.*;
 
 /*
     Problem: Remove Element
-    1) Here we have to count the digits of lucky numbers in the number
-    2) Then if that number is equal to the lucky digit then it's nearly lucky
+    1) We check if the given value is in the array or not
+    2) if it's not then we store that number into the same array since we don't need it for any other use
+    3) Return the index that was used to store the values in to get the size of the newly created array
  */
 
 public class Main {

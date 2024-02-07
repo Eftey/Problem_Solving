@@ -2,9 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: MATH1 Enrolment
-    1) If there are more student than the total seat then we put 0
-    2) Else just subtract the total number of seats from the students to get the remaining seats
+    Problem: Sleep deprivation
+    1) If the number is less than 7 then it's YES else NO
  */
 
 public class Main {
@@ -14,9 +13,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            int x = in.nextInt(), y = in.nextInt();
-            if (y - x < 0) pw.println(0);
-            else pw.println(y - x);
+            pw.println(in.nextInt() < 7 ? "YES" : "NO");
         }
         pw.close();
     }

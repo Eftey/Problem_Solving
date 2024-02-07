@@ -2,9 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: MATH1 Enrolment
-    1) If there are more student than the total seat then we put 0
-    2) Else just subtract the total number of seats from the students to get the remaining seats
+    Problem: Water Requirement
+    1) Each cooler needs 2 so multiply the input with 2 to get the total
  */
 
 public class Main {
@@ -14,9 +13,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            int x = in.nextInt(), y = in.nextInt();
-            if (y - x < 0) pw.println(0);
-            else pw.println(y - x);
+            pw.println(in.nextInt() * 2);
         }
         pw.close();
     }

@@ -2,7 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem:
+    Problem: Interior Design
+    1) The minimum price is the one he ones so just add the firs 2 inputs
+    2) And add the last 2 inputs and compare which one is minimum then that's the price
  */
 
 public class Main {
@@ -12,7 +14,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            pw.println(in.nextInt() % 10);
+            pw.println(Math.min((in.nextInt() + in.nextInt()), (in.nextInt() + in.nextInt())));
         }
         pw.close();
     }

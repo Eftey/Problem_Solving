@@ -2,7 +2,10 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem:
+    Problem: Minimum Coins
+    1) Since Notes has more values then we divide the price / 10
+    2) The remaining values are the number of notes
+    3) We can achieve it by just modding the price with 10 to get the remainder which is the number of notes
  */
 
 public class Main {

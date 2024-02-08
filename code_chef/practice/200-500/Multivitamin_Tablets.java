@@ -2,7 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem:
+    Problem: Multivitamin Tablets
+    1) 3 times * total tablets = He has to take
+    2) Then if it's smaller or equal to the remaining ones then he has to take else don't
  */
 
 public class Main {
@@ -12,7 +14,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            pw.println(in.nextInt() % 10);
+            pw.println(in.nextInt() * 3 <= in.nextInt() ? "YES" : "NO");
         }
         pw.close();
     }

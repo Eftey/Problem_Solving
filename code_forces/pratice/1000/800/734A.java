@@ -14,20 +14,16 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
-        String x = "leetcode", xx = "leeto ";
-        pw.println(strStr(x, xx));
-        pw.close();
-    }
-
-    public static int strStr(String h, String n) {
-        int x = h.length(), xx = n.length();
-        if (x < xx) return -1;
-        else if (x == xx) return h.equals(n) ? 0 : -1;
-        else {
-            for (int i = 0; i <= x - xx; i++)
-                if (h.substring(i, xx + i).equals(n)) return i;
+        int t = in.nextInt(), a = 0, d = 0;
+        String s = in.next();
+        for (char i : s.toCharArray()) {
+            a += (i == 'A') ? 1 : 0;
+            d += (i == 'D') ? 1 : 0;
         }
-        return -1;
+        if (a > d) pw.println("Anton");
+        else if (a < d) pw.println("Danik");
+        else pw.println("Friendship");
+        pw.close();
     }
 
     static void debug(Object... obj) {

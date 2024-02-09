@@ -2,8 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Discount
-    1) 100 - discount = Alice has to pay. So it has to be within 100
+    Problem: Volume Control
+    1) First input to second input subtraction will give the number of button he has to press
+    2) But it might become negative if the second input is greater that's why we use Absolute value to avoid that
  */
 
 public class Main {
@@ -13,7 +14,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            pw.println(100 - in.nextInt());
+            pw.println(Math.abs(in.nextInt() - in.nextInt()));
         }
 
         pw.close();

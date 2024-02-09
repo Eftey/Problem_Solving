@@ -2,8 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Discount
-    1) 100 - discount = Alice has to pay. So it has to be within 100
+    Problem: True and False Paper
+    1) Since Bos has the opposite score of Alice then just subtract the number from Alice
+    2) But if Alice score lower than it'll be negetive so we put Absolute to avoid that
  */
 
 public class Main {
@@ -13,7 +14,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            pw.println(100 - in.nextInt());
+            pw.println(Math.abs(in.nextInt() - in.nextInt()));
         }
 
         pw.close();

@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Discount
-    1) 100 - discount = Alice has to pay. So it has to be within 100
+    Problem: Height of Rationals
+    1) You have to find the one that's maximum
  */
 
 public class Main {
@@ -11,11 +11,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
-        int t = in.nextInt();
-        for (int tt = 0; tt < t; tt++) {
-            pw.println(100 - in.nextInt());
-        }
-
+        pw.println(Math.max(in.nextInt(), in.nextInt()));
         pw.close();
     }
 

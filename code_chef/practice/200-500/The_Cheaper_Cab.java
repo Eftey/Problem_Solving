@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Discount
-    1) 100 - discount = Alice has to pay. So it has to be within 100
+    Problem: The Cheaper Cab
+    1) If x < y then First else if x > y then second else any
  */
 
 public class Main {
@@ -13,7 +13,10 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            pw.println(100 - in.nextInt());
+            int x = in.nextInt(), y = in.nextInt();
+            if(x < y) pw.println("FIRST");
+            else if (x > y) pw.println("SECOND ");
+            else pw.println("ANY");
         }
 
         pw.close();

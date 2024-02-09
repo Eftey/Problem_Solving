@@ -2,8 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Discount
-    1) 100 - discount = Alice has to pay. So it has to be within 100
+    Problem: Reach Home
+    1) Input * 5 = His total path with the current fuel
+    2) If it's greater or equal than the path he has to cover then yes else no
  */
 
 public class Main {
@@ -13,7 +14,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            pw.println(100 - in.nextInt());
+            pw.println(in.nextInt() * 5 >= in.nextDouble() ? "YES" : "NO");
         }
 
         pw.close();

@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Discount
-    1) 100 - discount = Alice has to pay. So it has to be within 100
+    Problem: Donation Rewards
+    1) If <= 3 then Bronze else if <= 6 then silver else it's gold
  */
 
 public class Main {
@@ -13,7 +13,10 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            pw.println(100 - in.nextInt());
+            int x = in.nextInt();
+            if(x <= 3) pw.println("BRONZE");
+            else if (x <= 6) pw.println("SILVER ");
+            else pw.println("GOLD");
         }
 
         pw.close();

@@ -2,9 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Length of Last Word
-    1) Split the String by " " space it'll return the string into an array
-    2) Then return the last string of the array
+    Problem: Speciality
+    1) If input * 10 greater or equal than input two then Cloth else Disposable
  */
 
 public class Main {
@@ -12,10 +11,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
-        //String s = in.next();
-        String s = "luffy is still joyboy";
-        String[] arr = s.split(" ", 0);
-        pw.println(arr[arr.length - 1].length());
+        int t = in.nextInt();
+        for (int tt = 0; tt < t; tt++) {
+            pw.println(in.nextInt() * 10 >= in.nextInt() ? "Cloth" : "Disposable");
+        }
         pw.close();
     }
 

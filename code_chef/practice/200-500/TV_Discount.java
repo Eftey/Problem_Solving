@@ -2,8 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Chef and Masks
-    1) If input * 10 greater or equal than input two then Cloth else Disposable
+    Problem: TV Discount
+    1) If both the price subtract discounts are less than 2nd one then first
+    2) If it's equal then any else second
  */
 
 public class Main {
@@ -13,8 +14,12 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            pw.println(in.nextInt() * 10 >= in.nextInt() ? "Cloth" : "Disposable");
+            int x = in.nextInt(), y = in.nextInt(), a = in.nextInt(), b = in.nextInt();
+            if ((x - a) > (y - b)) pw.println("Second");
+            else if ((x - a) < (y - b)) pw.println("First");
+            else pw.println("Any");
         }
+
         pw.close();
     }
 

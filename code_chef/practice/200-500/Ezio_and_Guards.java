@@ -2,9 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Length of Last Word
-    1) Split the String by " " space it'll return the string into an array
-    2) Then return the last string of the array
+    Problem: Ezio and Guards
+    1) If x is greater than y then Yes else No
  */
 
 public class Main {
@@ -12,10 +11,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
-        //String s = in.next();
-        String s = "luffy is still joyboy";
-        String[] arr = s.split(" ", 0);
-        pw.println(arr[arr.length - 1].length());
+        int t = in.nextInt();
+        for (int tt = 0; tt < t; tt++) {
+            pw.println(in.nextInt() >= in.nextInt() ? "YES" : "NO");
+        }
+
         pw.close();
     }
 

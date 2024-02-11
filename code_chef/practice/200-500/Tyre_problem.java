@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Practice makes us perfect
-    1) If any of the inputs are greater or equal than 10 then we add by 1 and print the result
+    Problem: Tyre problem
+    1) Total tyres are the number of bikes * 2 + the number of cars * 4
  */
 
 public class Main {
@@ -11,12 +11,10 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
-        int a = in.nextInt(), b = in.nextInt(), cc = in.nextInt(), d = in.nextInt(), c = 0;
-        if (a >= 10) c++;
-        if (b >= 10) c++;
-        if (cc >= 10) c++;
-        if (d >= 10) c++;
-        pw.println(c);
+        int t = in.nextInt();
+        for (int tt = 0; tt < t; tt++) {
+            pw.println(in.nextInt() * 2 + in.nextInt() * 4);
+        }
         pw.close();
     }
 

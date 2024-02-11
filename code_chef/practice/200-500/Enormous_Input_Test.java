@@ -2,8 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Practice makes us perfect
-    1) If any of the inputs are greater or equal than 10 then we add by 1 and print the result
+    Problem: Enormous Input Test
+    1) We just check if the numbers are divisible by k using mod operation and if so we add it to sum
+    2) And lastly print the value of sum
  */
 
 public class Main {
@@ -11,12 +12,11 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
-        int a = in.nextInt(), b = in.nextInt(), cc = in.nextInt(), d = in.nextInt(), c = 0;
-        if (a >= 10) c++;
-        if (b >= 10) c++;
-        if (cc >= 10) c++;
-        if (d >= 10) c++;
-        pw.println(c);
+        int t = in.nextInt(), k = in.nextInt(), sum = 0;
+        for (int tt = 0; tt < t; tt++) {
+            if (in.nextInt() % k == 0) sum++;
+        }
+        pw.println(sum);
         pw.close();
     }
 

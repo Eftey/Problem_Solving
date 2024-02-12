@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: The Mango Truck
-    1) Max mango load = (bridge withstand - truck weight) / weight of the mango
+    Problem: Monopoly in Chefland
+    1) Both companies have to be greater than the 3rd one to be yes else no
  */
 
 public class Main {
@@ -14,7 +14,10 @@ public class Main {
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
             int x = in.nextInt(), y = in.nextInt(), z = in.nextInt();
-            pw.println((z - y) / x);
+            if(x > (y + z)) pw.println("YES");
+            else if(y > (x + z)) pw.println("YES");
+            else if(z > (x + y)) pw.println("YES");
+            else pw.println("NO");
         }
         pw.close();
     }

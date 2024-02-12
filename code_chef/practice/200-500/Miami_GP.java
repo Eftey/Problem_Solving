@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: The Mango Truck
-    1) Max mango load = (bridge withstand - truck weight) / weight of the mango
+    Problem: Miami GP
+    1) If the current speed * 1.07 is greater or equal than his speed then yes else no
  */
 
 public class Main {
@@ -13,8 +13,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            int x = in.nextInt(), y = in.nextInt(), z = in.nextInt();
-            pw.println((z - y) / x);
+            pw.println(in.nextInt() * 1.07 >= in.nextInt() ? "YES" : "NO");
         }
         pw.close();
     }

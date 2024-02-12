@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: The Mango Truck
-    1) Max mango load = (bridge withstand - truck weight) / weight of the mango
+    Problem: Bob at the Bank
+    1) Current ballance + Amount he gets - his deduction * each month = His balance
  */
 
 public class Main {
@@ -13,8 +13,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            int x = in.nextInt(), y = in.nextInt(), z = in.nextInt();
-            pw.println((z - y) / x);
+            pw.println(in.nextInt() + ((in.nextInt() - in.nextInt()) * in.nextInt()));
         }
         pw.close();
     }

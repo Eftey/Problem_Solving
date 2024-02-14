@@ -3,9 +3,9 @@ import java.util.*;
 
 /*
     Problem: Best Coupon
-    1) If he can't join the gym then 0
-    2) If he can join the gym then 1
-    3) If he can join the gym and have a trainer then 2
+    1) He has to get whichever is cheaper
+    2) 10% off means divide it by 10 or 100
+    2) Print whichever one is greater
  */
 
 public class Main {

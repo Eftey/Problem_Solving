@@ -13,16 +13,12 @@ public class Main {
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
             int x = in.nextInt(), y = in.nextInt(), z = in.nextInt();
-            if(x == 0 && y == 0) pw.println("Water filling time");
+            if (x == 0 && y == 0) pw.println("Water filling time");
             else if (x == 0 && z == 0) pw.println("Water filling time");
-            else if(y == 0 && z == 0) pw.println("Water filling time");
+            else if (y == 0 && z == 0) pw.println("Water filling time");
             else pw.println("Not now");
         }
         pw.close();
-    }
-
-    public static int mySqrt(int x) {
-        return (int) Math.floor(Math.sqrt(x));
     }
 
     static void debug(Object... obj) {

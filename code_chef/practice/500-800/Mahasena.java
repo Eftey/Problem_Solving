@@ -21,10 +21,6 @@ public class Main {
         pw.close();
     }
 
-    public static int mySqrt(int x) {
-        return (int) Math.floor(Math.sqrt(x));
-    }
-
     static void debug(Object... obj) {
         System.err.println(Arrays.deepToString(obj));
     }

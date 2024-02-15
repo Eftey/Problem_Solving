@@ -3,6 +3,8 @@ import java.util.*;
 
 /*
     Problem: In Search of an Easy Problem
+    1) We just find if there's any input with the value of 1
+    2) If so we declear it as Hard problem
  */
 
 public class Main {

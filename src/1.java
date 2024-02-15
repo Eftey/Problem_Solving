@@ -1,34 +1,30 @@
-//#include <bits/stdc++.h>
-//using namespace std;
+//import java.io.*;
+//import java.util.*;
 //
-//int solve(char x, char xx) {
-//    int res = 0;
-//    while(x != xx) {
-//        x += 3;
-//        if(x > 90) {
-//            x = x - 26;
-//        }
-//        res++;
-//    }
-//    return res;
-//}
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner in = new Scanner(System.in);
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        PrintWriter pw = new PrintWriter(System.out);
 //
-//int main() {
-//    int tt;
-//    cin >> tt;
-//    while (tt--) {
-//        int n;
-//        cin >> n;
-//        string x, xx;
-//        cin >> x >> xx;
-//        vector<int> arr(n);
-//        for (int i = 0; i < x.size(); i++) {
-//            arr[i] = solve(x[i], xx[i]);
+//        int t = in.nextInt();
+//        for (int tt = 0; tt < t; tt++) {
+//            int x = in.nextInt(), sum = 0;
+//            int[] arr = new int[x];
+//            for (int i = 0; i < arr.length; i++) {
+//                arr[i] = in.nextInt();
+//            }
+//            Arrays.sort(arr);
+//            for (int i = 1; i < arr.length; i++) {
+//                sum += arr[i] - arr[i - 1];
+//            }
+//            pw.println(sum);
 //        }
-//        for(auto f:arr){
-//            cout << f << " ";
-//        }
-//        cout << endl;
+//
+//        pw.close();
 //    }
 //
+//    static void debug(Object... obj) {
+//        System.err.println(Arrays.deepToString(obj));
+//    }
 //}

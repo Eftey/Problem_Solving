@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: A. Bear and Big Brother
+    Problem: A
  */
 
 

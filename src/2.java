@@ -1,34 +1,20 @@
 //import java.io.*;
 //import java.util.*;
 //
-///*
-//    Problem: A
-// */
-//
 //public class Main {
-//
-//    public static void main(String[] args) throws Exception {
+//    public static void main(String[] args) {
 //        Scanner in = new Scanner(System.in);
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        PrintWriter pw = new PrintWriter(System.out);
-//        int t = in.nextInt();
-//        String s = "Aabcdefghijklmnopqrstuvwxyz";
 //
+//        int t = in.nextInt();
 //        for (int tt = 0; tt < t; tt++) {
-//            StringBuilder sb = new StringBuilder();
-//            int x = in.nextInt();
-//            if (x < 28) {
-//                sb.append("aa");
-//                sb.append(s.charAt(x - 2));
-//            } else if (x > 28 && x <= 53) {
-//                sb.append("a");
-//                sb.append(s.charAt(x - 27));
-//                sb.append("z");
-//            } else if (x > 53) {
-//                sb.append(s.charAt(x - 52));
-//                sb.append("zz");
-//            }
-//            pw.println(sb.toString());
+//            int n = in.nextInt(), k = in.nextInt(), ans = 0;
+//            if (((4 * n) - 2) == k) ans = (int) Math.ceil(k / 2.0) + 1;
+//            else ans = (int) Math.ceil(k / 2.0);
+//            pw.println(ans);
 //        }
+//
 //        pw.close();
 //    }
 //

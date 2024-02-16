@@ -3,8 +3,8 @@ import java.util.*;
 
 /*
     Problem: Monopoly
-    1) 50% means half of the input1 so we divide it to get the answer
-    2) If it's greater than 2nd input then yes else no
+    1) We check for each company with the rest of their sum to find if it's greater than the sum or not
+    2) If so then yes else no
  */
 
 public class Main {
@@ -13,7 +13,12 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            pw.println(in.nextInt() / 2 <= in.nextInt() ? "YES" : "NO");
+            int x = in.nextInt(), y = in.nextInt(), a = in.nextInt(), b = in.nextInt();
+            if (a > (b + x + y)) pw.println("YES");
+            else if (b > (a + x + y)) pw.println("YES");
+            else if (x > (b + a + y)) pw.println("YES");
+            else if (y > (b + x + a)) pw.println("YES");
+            else pw.println("NO");
         }
         pw.close();
     }

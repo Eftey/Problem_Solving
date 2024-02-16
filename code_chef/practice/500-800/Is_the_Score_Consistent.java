@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem:
-    1)
+    Problem: Is the Score Consistent
+    1) If any of the previous input gets lower or equal value, then it's not possible else possible
  */
 
 public class Main {
@@ -12,7 +12,9 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-
+            int x = in.nextInt(), y = in.nextInt(), a = in.nextInt(), b = in.nextInt();
+            if (x <= a && y <= b) pw.println("POSSIBLE");
+            else pw.println("IMPOSSIBLE");
         }
         pw.close();
     }

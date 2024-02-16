@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem:
-    1)
+    Problem: Chef and NextGen
+    1) If prodicton <= resources then yes else no
  */
 
 public class Main {
@@ -12,7 +12,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-
+            pw.println((in.nextInt() * in.nextInt()) <= in.nextInt() * in.nextInt() ? "YES" : "NO");
         }
         pw.close();
     }

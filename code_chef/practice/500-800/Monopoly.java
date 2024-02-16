@@ -2,8 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem:
-    1)
+    Problem: Monopoly
+    1) 50% means half of the input1 so we divide it to get the answer
+    2) If it's greater than 2nd input then yes else no
  */
 
 public class Main {
@@ -12,7 +13,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-
+            pw.println(in.nextInt() / 2 <= in.nextInt() ? "YES" : "NO");
         }
         pw.close();
     }

@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem:
-    1)
+    Problem: Sugarcane Juice Business
+    1) Subtracting 20% + 20% + 30 % from 50 * price gives us the profit
  */
 
 public class Main {
@@ -12,7 +12,8 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-
+            int x = in.nextInt() * 50;
+            pw.println(x - ((((x / 10) * 2) * 2) + ((x / 10) * 3)));
         }
         pw.close();
     }

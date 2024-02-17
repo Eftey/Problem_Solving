@@ -2,8 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem:
-    1)
+    Problem: Reverse The Number
+    1) Here we take the input from String builder and then reverse it
+    2) Next we parse it back to integer to get the correct output of 0032 to 32
  */
 
 public class Main {
@@ -12,7 +13,9 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-
+            StringBuilder sb = new StringBuilder(in.next());
+            sb.reverse();
+            pw.println(Integer.parseInt(sb.toString()));
         }
 
         pw.close();

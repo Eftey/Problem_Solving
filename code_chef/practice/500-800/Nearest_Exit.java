@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem:
-    1)
+    Problem: Nearest Exit
+    1) If the seat number is smaller or equal to 50 then left else right
  */
 
 public class Main {
@@ -12,7 +12,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-
+            pw.println(in.nextInt() <= 50 ? "LEFT" : "RIGHT");
         }
 
         pw.close();

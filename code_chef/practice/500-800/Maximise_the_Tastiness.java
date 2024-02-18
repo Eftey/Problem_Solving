@@ -2,7 +2,10 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem:
+    Problem: Maximise the Tastiness
+    1) Find the max out of A and B
+    2) Find the max out of B and C
+    3) Then sum the result of those max values
 
  */
 
@@ -12,7 +15,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-
+            pw.println(Math.max(in.nextInt(), in.nextInt()) + Math.max(in.nextInt(), in.nextInt()));
         }
         pw.close();
     }

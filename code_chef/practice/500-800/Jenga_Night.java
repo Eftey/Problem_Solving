@@ -2,7 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem:
+    Problem: Jenga Night
+    1) If the tiles are divisible by the number of pleople, then it's possible else not
 
  */
 
@@ -12,11 +13,11 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-
+            int x = in.nextInt(), y = in.nextInt();
+            pw.println(y % x == 0 ? "YES" : "NO");
         }
         pw.close();
     }
-
 
     static void debug(Object... obj) {
         System.err.println(Arrays.deepToString(obj));

@@ -2,7 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem:
+    Problem: Bath in Winters
+    1) We have to multiply the water and then divide the total capacity by that number to get the result
 
  */
 
@@ -12,7 +13,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-
+            pw.println(in.nextInt() / (in.nextInt() * 2));
         }
         pw.close();
     }

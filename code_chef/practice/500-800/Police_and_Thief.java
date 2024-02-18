@@ -2,7 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem:
+    Problem: Police and Thief
+    1) We just have to subtract time
+    2) But to avoid negetive we use absolute
 
  */
 
@@ -12,7 +14,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-
+            pw.println(Math.abs(in.nextInt() - in.nextInt()));
         }
         pw.close();
     }

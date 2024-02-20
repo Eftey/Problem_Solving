@@ -2,7 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Mario and Transformation
+    Problem: Drinks
+    1) We have to add each value's percentage and divide it by the total length to get the answer
  */
 
 public class Main {
@@ -10,12 +11,9 @@ public class Main {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
-        for (int tt = 0; tt < t; tt++) {
-            int x = in.nextInt();
-            if (x % 3 == 0) pw.println("NORMAL");
-            else if (x % 3 == 1) pw.println("HUGE");
-            else pw.println("SMALL");
-        }
+        double x = 0;
+        for (int tt = 0; tt < t; tt++) x += (double) in.nextInt() / 100;
+        pw.println((x / t) * 100);
         pw.close();
     }
 

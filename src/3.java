@@ -2,37 +2,34 @@
 //import java.util.*;
 //
 ///*
-//    Problem: A
+//    Problem: C
 // */
 //
 //public class Main {
-//
-//    public static void main(String[] args) throws Exception {
+//    public static void main(String[] args) {
 //        Scanner in = new Scanner(System.in);
 //        PrintWriter pw = new PrintWriter(System.out);
 //        int t = in.nextInt();
-//
 //        for (int tt = 0; tt < t; tt++) {
-//            int n = in.nextInt();
-//            //int[] arr = new int[n];
-//            List<Integer> arr = new ArrayList<>();
-//            for (int i = 0; i < n; i++) {
-//                arr.add(in.nextInt());
-//            }
+//            int n = in.nextInt(), m = in.nextInt();
+//            long[] arr = new long[n];
+//            for (int i = 0; i < n; i++) arr[i] = in.nextLong();
+//            String s = in.next();
+//            long c = 1;
+//            for (int i = 0; i < n; i++) c *= arr[i];
 //
-//            int ptr = 0, ptr1 = n - 1;
-//            while (Objects.equals(arr.get(ptr), arr.getFirst())) ++ptr;
-//            while (Objects.equals(arr.get(ptr1), arr.get(n - 1))) --ptr1;
-//            if (n == 1) {
-//                pw.println(0);
-//                continue;
+//            long[] res = new long[n];
+//            int f = 0, l = n - 1;
+//            for (int i = 0; i < n; i++) {
+//                long rem = c % m;
+//                res[i] = rem;
+//                if (s.charAt(i) == 'L') c = c / arr[f++];
+//                else c = c / arr[l--];
 //            }
-//            if (!Objects.equals(arr.getFirst(), arr.getLast())) {
-//                pw.println(Math.min(n - ptr, ptr1 + 1));
-//                continue;
-//            }
-//            pw.println(Math.max(0, ptr1 - ptr + 1));
+//            for (int i = 0; i < n; i++) pw.print(res[i] + " ");
+//            pw.println();
 //        }
+//
 //        pw.close();
 //    }
 //

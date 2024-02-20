@@ -1,24 +1,21 @@
-//import java.io.*;
-//import java.util.*;
 //
-//public class Main {
-//    public static void main(String[] args) {
-//        Scanner in = new Scanner(System.in);
-//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//        PrintWriter pw = new PrintWriter(System.out);
+//public static long getPdtUtil(Long[] st, long ss, long se, long qs, long qe, int si) {
+//    long mod = 1000000007;
+//    if (qs <= ss && qe >= se) return st[si];
+//    if (se < qs || ss > qe) return 1;
+//    long mid = getMid(ss, se);
+//    return (getPdtUtil(st, ss, mid, qs, qe, 2 * si + 1) % mod *
+//            getPdtUtil(st, mid + 1, se, qs, qe, 2 * si * 2) % mod) % mod;
+//}
 //
-//        int t = in.nextInt();
-//        for (int tt = 0; tt < t; tt++) {
-//            int n = in.nextInt(), k = in.nextInt(), ans = 0;
-//            if (((4 * n) - 2) == k) ans = (int) Math.ceil(k / 2.0) + 1;
-//            else ans = (int) Math.ceil(k / 2.0);
-//            pw.println(ans);
-//        }
+//private static long getMid(long s, long e) {
+//    return s + (e - s) / 2;
+//}
 //
-//        pw.close();
-//    }
+//public static long constructST(long[] arr, long n) {
+//    long x = (long) (Math.ceil(Math.log1p(n)));
+//    int max_size = 2 * (int) Math.pow(2, x) - 1;
+//    long[] st = new long[max_size];
 //
-//    static void debug(Object... obj) {
-//        System.err.println(Arrays.deepToString(obj));
-//    }
+//    constructSTUtil(arr, 0, n-1, st, 0);
 //}

@@ -1,21 +1,32 @@
+//import java.io.*;
+//import java.util.*;
 //
-//public static long getPdtUtil(Long[] st, long ss, long se, long qs, long qe, int si) {
-//    long mod = 1000000007;
-//    if (qs <= ss && qe >= se) return st[si];
-//    if (se < qs || ss > qe) return 1;
-//    long mid = getMid(ss, se);
-//    return (getPdtUtil(st, ss, mid, qs, qe, 2 * si + 1) % mod *
-//            getPdtUtil(st, mid + 1, se, qs, qe, 2 * si * 2) % mod) % mod;
-//}
+//public class Main {
 //
-//private static long getMid(long s, long e) {
-//    return s + (e - s) / 2;
-//}
-//
-//public static long constructST(long[] arr, long n) {
-//    long x = (long) (Math.ceil(Math.log1p(n)));
-//    int max_size = 2 * (int) Math.pow(2, x) - 1;
-//    long[] st = new long[max_size];
-//
-//    constructSTUtil(arr, 0, n-1, st, 0);
+//    public static void main(String[] args) throws IOException {
+//        Scanner sc = new Scanner(System.in);
+//        int t = sc.nextInt();
+//        while (t-- > 0) {
+//            int n = sc.nextInt();
+//            int cnt = 0, pos = 0;
+//            for (int i = 31; i >= 0; i--) {
+//                if ((n & (1L << i)) != 0) {
+//                    if (pos == 0) pos = i;
+//                    if (cnt == 0 || cnt == 2) cnt++;
+//                } else if (cnt == 1) cnt = 2;
+//            }
+//            if (cnt != 3) {
+//                System.out.println(0);
+//                continue;
+//            }
+//            int curnum = 0, ans = Integer.MAX_VALUE;
+//            for (int i = pos; i >= 0; i--) {
+//                curnum += Math.pow(2, i);
+//                if (curnum < n) continue;
+//                ans = Math.min(ans, curnum - n);
+//            }
+//            System.out.println(ans);
+//        }
+//        sc.close();
+//    }
 //}

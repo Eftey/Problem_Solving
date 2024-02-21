@@ -3,6 +3,8 @@ import java.util.*;
 
 /*
     Problem: Ultra-Fast Mathematician
+    1) Here we have to find if there's any values that are identical in both strings
+    2) If so then we print 0 else we print 1 in that position
  */
 
 public class Main {

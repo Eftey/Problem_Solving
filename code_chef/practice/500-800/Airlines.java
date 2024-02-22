@@ -3,10 +3,10 @@ import java.util.*;
 
 /*
     Problem: Airlines
-    1) If after adding both apps and still there is space then no need to delete
-    2) If not then after removing each app and still there's space left for 3rd app then delete 1
-    3) Else need to delete both apps
- */
+    1) If there's more seat than the passenger then they don't need to buy any more planes so answer = 0
+    2) But if not the case, then they have to see how many planes they need for the required passengers
+    3) Then remove what they currentlu have with that number to get the answer
+*/
 
 public class Main {
     public static void main(String[] args) {
@@ -14,8 +14,9 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            int s = in.nextInt(), a = in.nextInt(), b = in.nextInt(), z = in.nextInt();
-            pw.println((s - (a + b) >= z) ? 0 : ((s - a >= z || s - b >= z) ? 1 : 2));
+            int x = in.nextInt(), xx = in.nextInt();
+            if (x * 100 > xx) pw.println(0);
+            else pw.println(((int) (Math.ceil((double) xx / 100))) - x);
         }
         pw.close();
     }

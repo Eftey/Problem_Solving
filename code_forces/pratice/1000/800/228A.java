@@ -2,19 +2,19 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Chessboard Distance
-    1)
+    Problem: Is your horseshoe on the other hoof?
+    1) We have to find the unique colors
+    2) So if there are any duplicates we exclude it
+    3) Easy way to achomplish it using Set
  */
 
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
-        int t = in.nextInt();
-        for (int tt = 0; tt < t; tt++) {
-            int x = in.nextInt(), xx = in.nextInt();
-            pw.println((x + xx + 1) % 4 == 1 || (x + xx + 1) % 4 == 2 ? "Alice" : "Bob");
-        }
+        Set<Integer> s = new HashSet<>();
+        for (int tt = 0; tt < 4; tt++) s.add(in.nextInt());
+        pw.println(4 - s.size());
         pw.close();
     }
 

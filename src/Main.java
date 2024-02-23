@@ -1,7 +1,9 @@
 import java.io.*;
 import java.util.*;
 
-
+/*
+    Problem: A
+*/
 
 public class Main {
     public static void main(String[] args) {
@@ -10,12 +12,10 @@ public class Main {
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
 
+
         }
         pw.close();
     }
-
-
-
 
     static void debug(Object... obj) {
         System.err.println(Arrays.deepToString(obj));

@@ -3,6 +3,9 @@ import java.util.*;
 
 /*
     Problem: Divisibility Problem
+    1) a = 10, b = 4
+    2) a % b = 2
+    3) If we subtract that reminder from b then it's divisible by b
 */
 
 public class Main {

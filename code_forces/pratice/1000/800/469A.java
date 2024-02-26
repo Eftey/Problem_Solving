@@ -2,8 +2,10 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Balanced Binary Tree
-    1)
+    Problem: I Wanna Be the Guy
+    1) We add each level that are passed by X and Y into a Set
+    2) Since sets stores only the unique elements, that's why if we check size
+    3) If the size is equal to the same as the total levels then true else false
 */
 
 public class Main {

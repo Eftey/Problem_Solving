@@ -2,9 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: The Cooler Dilemma 2
-    1) If y is not divisible by x, then their division is the result
-    2) Else we have to subtract 1 from the result
+    Problem: Chef And Operators
+    1) If the first input is greater than greater-than sign
+    2) If it's smaller than smaller-than sign else equal sign
 */
 
 public class Main {
@@ -13,8 +13,8 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            int x = in.nextInt(), y = in.nextInt();
-            pw.println(y % x != 0 ? (int) (y / x) : (int) (y / x) - 1);
+            int x = in.nextInt(), xx = in.nextInt();
+            pw.println(x > xx ? ">" : x < xx ? "<" : "=");
         }
         pw.close();
     }

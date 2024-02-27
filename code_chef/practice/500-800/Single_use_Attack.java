@@ -2,9 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: The Cooler Dilemma 2
-    1) If y is not divisible by x, then their division is the result
-    2) Else we have to subtract 1 from the result
+    Problem: Single-use Attack
+    1) We reduce by the special attack first then we subtract the normal attack value
+    2) And count every time we performed such a task
 */
 
 public class Main {
@@ -13,8 +13,13 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            int x = in.nextInt(), y = in.nextInt();
-            pw.println(y % x != 0 ? (int) (y / x) : (int) (y / x) - 1);
+            int h = in.nextInt(), x = in.nextInt(), k = in.nextInt(), c = 1;
+            h -= k;
+            while (h > 0) {
+                h -= x;
+                c++;
+            }
+            pw.println(c);
         }
         pw.close();
     }

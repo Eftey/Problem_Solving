@@ -2,9 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: The Cooler Dilemma 2
-    1) If y is not divisible by x, then their division is the result
-    2) Else we have to subtract 1 from the result
+    Problem: Chef and Races
+    1) If any of the breacket where there's no sign of his rival he wins 2
+    2) If if he's in 1 game then chef wins 1 else 0
 */
 
 public class Main {
@@ -13,8 +13,9 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            int x = in.nextInt(), y = in.nextInt();
-            pw.println(y % x != 0 ? (int) (y / x) : (int) (y / x) - 1);
+            int x = in.nextInt(), xx = in.nextInt(), xxx = in.nextInt(), xxxx = in.nextInt();
+            pw.println((x != xxx && x != xxxx) && (xx != xxx && xx != xxxx) ? 2 : (x != xxx && x != xxxx) || (xx != xxx && xx != xxxx) ? 1 : 0);
+
         }
         pw.close();
     }

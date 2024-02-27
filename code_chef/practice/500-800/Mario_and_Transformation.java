@@ -3,6 +3,7 @@ import java.util.*;
 
 /*
     Problem: Mario and Transformation
+    1) We just find the reminder if it's 1 then huge if it's 0 then normal else it's small
  */
 
 public class Main {

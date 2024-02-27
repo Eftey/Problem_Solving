@@ -2,9 +2,9 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: The Cooler Dilemma 2
-    1) If y is not divisible by x, then their division is the result
-    2) Else we have to subtract 1 from the result
+    Problem: Dracula Eats
+    1) We count all the Tuesdays in x
+    2) And print the result
 */
 
 public class Main {
@@ -13,8 +13,9 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            int x = in.nextInt(), y = in.nextInt();
-            pw.println(y % x != 0 ? (int) (y / x) : (int) (y / x) - 1);
+            int x = in.nextInt(), c = 0;
+            for (int i = 2; i <= x; i += 7) c++;
+            pw.println(c);
         }
         pw.close();
     }

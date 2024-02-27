@@ -2,9 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: The Cooler Dilemma 2
-    1) If y is not divisible by x, then their division is the result
-    2) Else we have to subtract 1 from the result
+    Problem: Pass or Fail
+    1) If the total number is greater or equal than what he optaioned then pass else fail
 */
 
 public class Main {
@@ -13,8 +12,8 @@ public class Main {
         PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for (int tt = 0; tt < t; tt++) {
-            int x = in.nextInt(), y = in.nextInt();
-            pw.println(y % x != 0 ? (int) (y / x) : (int) (y / x) - 1);
+            int n = in.nextInt(), x = in.nextInt(), p = in.nextInt();
+            pw.println(x * 3 - (n - x) >= p ? "PASS" : "FAIL");
         }
         pw.close();
     }

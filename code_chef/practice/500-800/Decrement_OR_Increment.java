@@ -2,19 +2,16 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Jenga Night
-    1) If the tiles are divisible by the number of pleople, then it's possible else not
- */
+    Problem: Decrement OR Increment
+    1) If it's divisible bt 4 then increase by 1 else decrease
+*/
 
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
-        int t = in.nextInt();
-        for (int tt = 0; tt < t; tt++) {
-            int x = in.nextInt(), y = in.nextInt();
-            pw.println(y % x == 0 ? "YES" : "NO");
-        }
+        int x = in.nextInt();
+        pw.println(x % 4 == 0 ? ++x : --x);
         pw.close();
     }
 

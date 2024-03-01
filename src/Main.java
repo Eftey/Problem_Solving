@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: A
+    Problem: Bear and Candies 123
     1)
 */
 
@@ -17,8 +17,6 @@ public class Main {
         }
         pw.close();
     }
-
-
 
     static void debug(Object... obj) {
         System.err.println(Arrays.deepToString(obj));

@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: TCS Examination
-    1)
+    Problem: Elections in Chefland
+    1) Whoever has greater votes than 50 is the answer if not then NOTA
 */
 
 public class Main {

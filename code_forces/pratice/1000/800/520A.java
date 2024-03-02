@@ -3,6 +3,8 @@ import java.util.*;
 
 /*
     Problem: Pangram
+    1) We use set to store only the unique elements in the string
+    2) And if the size of that set is equal 26 then yes else no
  */
 
 public class Main {

@@ -2,10 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: ATM Machine
-    1) For each iteration, we subtract k from each customer amount.
-    2) But we do it only when there's enough money for them
-    3) If we have enough then print 1 else print 0
+    Problem: Best Time to Buy and Sell Stock
+    1)
  */
 
 public class Main {
@@ -29,6 +27,17 @@ public class Main {
         }
 
         pw.close();
+    }
+
+
+
+    public static int maxProfit(int[] arr) {
+        int rem = arr[0], prof = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < rem) rem = arr[i];
+            else prof = Math.max(prof, arr[i] - rem);
+        }
+        return prof;
     }
 
     static void debug(Object... obj) {

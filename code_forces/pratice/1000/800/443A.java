@@ -2,8 +2,7 @@ import java.io.*;
 import java.util.*;
 
 /*
-    Problem: Odd Pairs
-    1) n * n / 2 formula
+    Problem: Anton and Letters
  */
 
 public class Main {
@@ -11,11 +10,10 @@ public class Main {
         Scanner in = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(System.out);
 
-        int t = in.nextInt();
-        for (int tt = 0; tt < t; tt++) {
-            long x = in.nextLong();
-            pw.println(x * x / 2);
-        }
+        StringTokenizer stk = new StringTokenizer(in.nextLine(), "{,} ");
+        Set<String> set = new HashSet<>();
+        while (stk.hasMoreTokens()) set.add(stk.nextToken());
+        pw.println(set.size());
         pw.close();
     }
 

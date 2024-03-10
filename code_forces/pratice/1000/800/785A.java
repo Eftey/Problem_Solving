@@ -3,6 +3,7 @@ import java.util.*;
 
 /*
     Problem: Anton and Polyhedrons
+    1) Just add the equvalent values for each condition to the sum and print it
  */
 
 public class Main {

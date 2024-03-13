@@ -3,6 +3,8 @@ import java.util.*;
 
 /*
     Problem: Police Recruits
+    1) We just add the input and check if it's negetive or not
+    2) And also after the check we reset the value
  */
 
 public class Main {
